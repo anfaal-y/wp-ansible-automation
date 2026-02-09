@@ -1,0 +1,2 @@
+mysql_pkg: "{{ 'mysql-server' if ansible_os_family == 'Debian' else 'mariadb-server' }}"
+mysql_service: "{{ 'mysql' if ansible_os_family == 'Debian' else 'mariadb' }}"

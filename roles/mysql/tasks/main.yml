@@ -1,0 +1,10 @@
+- name: install mysql/mariadb
+  package:
+    name: "{{ mysql_pkg }}"
+    state: present
+
+- name: start mysql/mariadb
+  service:
+    name: "{{ mysql_service }}"
+    state: started
+    enabled: yes
