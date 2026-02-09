@@ -1,0 +1,10 @@
+- name: install php
+  package:
+   name: 
+     - php
+     - php-mysql
+     - php-cli
+     - php-curl
+     - php-gd
+     - php-mbstring
+   state: present
